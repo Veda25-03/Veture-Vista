@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="login.css" />
+
+  <style>
+    html {
+      scroll-behavior: smooth; /* 👈 Smooth scroll on anchor click */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 👇 This is your main page button — place wherever you want -->
+  <button onclick="document.getElementById('signup-section').scrollIntoView({ behavior: 'smooth' });">
+    Sign Up Now
+  </button>
+
+  <!-- 👇 Signup Section (scrolls to here) -->
+  <div class="page-wrapper" id="signup-section">
+    <div class="form-container">
+      <h2>Sign Up</h2>
+      <form action="signup.php" method="POST">
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Enter username" required />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required />
+
+        <label for="number">Contact</label>
+        <input type="text" name="number" placeholder="Enter contact number" required />
+
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Create a password" required />
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
